@@ -11,9 +11,8 @@ terraform {
     # resource_group_name  = ""   # Partial configuration, provided during "terraform init"
     # storage_account_name = ""   # Partial configuration, provided during "terraform init"
     # container_name       = ""   # Partial configuration, provided during "terraform init"
-    key                  = "hub-net2"
+    key                  = "lz-net"
   }
-
 }
 
 provider "azurerm" {

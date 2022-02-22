@@ -22,7 +22,7 @@ resource "azurerm_linux_virtual_machine" "compute" {
 
   admin_ssh_key {
     username   = var.ssh_key_settings.username
-    public_key = var.ssh_key_settings.public_key
+    public_key = file(var.ssh_key_settings.public_key)
   }
 
   source_image_reference {
