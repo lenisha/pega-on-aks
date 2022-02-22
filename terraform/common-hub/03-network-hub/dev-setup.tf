@@ -57,7 +57,9 @@ module "create_linuxsserver" {
   server_name         = "server-dev-linux"
   admin_username      = var.admin_username
   admin_password      = var.admin_password
-  ssh_key_settings    = var.ssh_key_settings
+  #ssh_key_settings    = var.ssh_key_settings
+  disable_password_authentication = false
+
 
 }
 

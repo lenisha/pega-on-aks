@@ -20,10 +20,10 @@ resource "azurerm_linux_virtual_machine" "compute" {
     storage_account_type = var.storage_account_type
   }
 
-  admin_ssh_key {
-    username   = var.ssh_key_settings.username
-    public_key = var.ssh_key_settings.public_key
-  }
+  #admin_ssh_key {
+  #  username   = var.ssh_key_settings.username
+  #  public_key = var.ssh_key_settings.public_key
+  #}
 
   source_image_reference {
     publisher = var.os_publisher
