@@ -25,6 +25,7 @@ resource "azurerm_linux_virtual_machine" "compute" {
   #  public_key = var.ssh_key_settings.public_key
   #}
 
+
   source_image_reference {
     publisher = var.os_publisher
     offer     = var.os_offer
